@@ -25,6 +25,7 @@ SECRET_KEY = 'y3o0)4o%g^3bsun+)74ct3tj)+bqh5oxjs(bsfkq#_v8e&d9^u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# '*' makes allowed cs50 to run django
 ALLOWED_HOSTS = ['*']
 
 
