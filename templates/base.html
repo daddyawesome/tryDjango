@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
 <head>
-    <title>Coding for myself and trying Django</title>
+    {% block title %} {% endblock %}
 </head>
 <body>
+    {% include 'navbar.html' %}
     {% block content %}
     {% endblock %}
 </body>
