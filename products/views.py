@@ -7,7 +7,8 @@ def product_create_view(request):
     form = ProductForm(request.POST or None)
     if form.is_valid():
         form.save()
-        form = ProductForm()
+        return redirect('../')
+        #form = ProductForm()
     context = {
         'form': form
     }
@@ -19,6 +20,7 @@ def product_update_view(request, id=id):
     form = ProductForm(request.POST or None, instance=obj)
     if form.is_valid():
         form.save()
+        return redirect('../../')
     context = {
         'form': form
     }
