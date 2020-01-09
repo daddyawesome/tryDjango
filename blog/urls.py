@@ -5,6 +5,8 @@ from .views import (
     ArticleDetailView,
     ArticleListView,
     ArticleUpdateView,
+
+
 )
 
 app_name = 'articles'

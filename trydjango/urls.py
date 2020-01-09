@@ -22,7 +22,7 @@ from products.views import product_detail_view, product_create_view
 
 urlpatterns = [
     path('blog/', include('blog.urls')),
-   # path('courses/', include('courses.urls')),
+    path('courses/', include('courses.urls')),
     path('products/', include('products.urls')),
     path('', home_view, name='home'),
     path('about/<int:id>/', about_view, name='product-detail'),
